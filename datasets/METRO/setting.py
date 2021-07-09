@@ -1,0 +1,22 @@
+from easydict import EasyDict as edict
+
+# init
+__C_METRO = edict()
+
+cfg_data = __C_METRO
+
+__C_METRO.STD_SIZE = (600,640)
+__C_METRO.TRAIN_SIZE = (600,640)
+__C_METRO.DATA_PATH = '../ProcessedData/METRO'               
+
+__C_METRO.MEAN_STD = ([0.452016860247, 0.447249650955, 0.431981861591],[0.23242045939, 0.224925786257, 0.221840232611])
+
+__C_METRO.LABEL_FACTOR = 1
+__C_METRO.LOG_PARA = 100.
+
+__C_METRO.RESUME_MODEL = ''#model path
+__C_METRO.TRAIN_BATCH_SIZE = 8 #imgs
+
+__C_METRO.VAL_BATCH_SIZE = 2 # 
+
+
